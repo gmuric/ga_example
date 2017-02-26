@@ -1,0 +1,13 @@
+This is just an example of Genetic Algorithm implementation used in the following video: https://www.youtube.com/watch?v=XcinBPhgT7M
+
+More detailed explanation of the solution:
+
+The "snakes" are made of 25 segments each. The solution (chromosome) is a list of angles (alpha) that segment can take where 0 ＜ alpha ＜ pi/2 (so that snakes can't go backwards). 
+
+The length of each segment is 1. If the starting coordinates of the segment are xi and yi, then the end of the segment is at the coordinates xi+1 = xi + cos(alpha) and yi+1 = yi + sin(alpha).
+
+The dimensions of the playground are 32x18.
+
+The fitness function is the distance between the end of the last segment and the food. If snake hits the obstacle or the frame or the food, the point of intersection becomes the end of the last segment.
+
+The program was implemented in MATLAB using Optimization Toolbox.
